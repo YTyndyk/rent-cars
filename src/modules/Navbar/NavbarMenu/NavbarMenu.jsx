@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styles from "./navbarmenu.module.scss";
+import styles from "./navbarMenu.module.scss";
 
 const NavbarMenu = ({ items }) => {
 	const elements = items.map(({ id, link, text }) => {
