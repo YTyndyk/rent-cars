@@ -1,6 +1,13 @@
 import axios from "axios";
 
-const instance = axios.create({
+const carInstance = axios.create({
 	baseURL: "https://64884dbd0e2469c038fd6fbc.mockapi.io/adverts",
 });
-export default instance;
+export const getCars = async () => {
+	const { data } = await carInstance.get("/");
+	return data;
+};
+
+// export const deleteCar = (id) => {
+// 	return carInstance.delete(`/${id}`);
+// };
