@@ -4,6 +4,8 @@ import CardItem from "../CardItem/CardItem";
 import { getCars } from "../../../redux/cars/cars-selectors";
 import { fetchCars } from "../../../redux/cars/cars-operations";
 
+import styles from "./cardList.module.scss";
+
 const CarList = () => {
 	const items = useSelector(getCars);
 	const dispath = useDispatch();
@@ -17,7 +19,7 @@ const CarList = () => {
 	));
 	return (
 		<>
-			<ul>{elements}</ul>
+			<ul className={styles.list}>{elements}</ul>
 		</>
 	);
 };
