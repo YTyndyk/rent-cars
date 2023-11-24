@@ -35,7 +35,10 @@ h1 {
 	font-size: 3.2em;
 	line-height: 1.1;
 }
-
+li {
+	list-style: none;
+	outline: 1px solid tomato;
+}
 button {
 	border-radius: 8px;
 	border: 1px solid transparent;
