@@ -6,7 +6,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import CatalogPage from "./pages/CatalogPage/CatalogPage";
 import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
 import navbarMenuItems from "./data/navbarMenuItems.json";
-import "./App.css";
+// import "./App.css";
 
 function App() {
 	return (

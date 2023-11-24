@@ -28,7 +28,7 @@ const CardItem = ({ ...props }) => {
 					</div>
 					<div>{rentalPrice}</div>
 				</div>
-				<ul>
+				<ul className={styles.item}>
 					<li>{address.split(",")[1]}</li>
 					<li>{address.split(",")[2]}</li>
 					<li>{rentalCompany}</li>
