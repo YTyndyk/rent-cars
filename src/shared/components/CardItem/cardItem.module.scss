@@ -4,5 +4,49 @@
 // 	grid-row: auto;
 // }
 .item {
+	position: relative;
+	margin-bottom: 50px;
+}
+.listInfo {
+	display: flex;
+	flex-wrap: wrap;
 	padding-inline-start: 0;
+	font-size: 12px;
+	color: rgba(18, 20, 23, 0.5);
+	line-height: 1, 5;
+}
+.heartBtn {
+	padding-block: 0px;
+	padding-inline: 0px;
+	border-width: 0px;
+	border-style: outset;
+	border-color: inherit;
+	border-image: initial;
+}
+.heartIcon {
+	size: 18px;
+	color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	display: flex;
+	top: 14px;
+	right: 14px;
+}
+.img {
+	border-radius: 14px;
+	width: 274px;
+	height: 268px;
+}
+.model {
+	color: rgba(52, 112, 255, 1);
+}
+.titleCard {
+	margin-top: 12px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1, 5;
+}
+.price {
+	margin-right: 9px;
 }

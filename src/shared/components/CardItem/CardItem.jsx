@@ -1,3 +1,5 @@
+import { FiHeart } from "react-icons/fi";
+import Delimiter from "../Delimiter/Delimiter";
 import styles from "./cardItem.module.scss";
 const CardItem = ({ ...props }) => {
 	const {
@@ -17,24 +19,44 @@ const CardItem = ({ ...props }) => {
 	return (
 		<>
 			<li className={styles.item}>
-				<button type="button">heart</button>
+				<button className={styles.heartBtn} type="button">
+					<FiHeart size={18} className={styles.heartIcon} />
+				</button>
 
-				<img src={img} alt={`${make} ${model}`} width="274" height="268" />
-				<div>
+				<img className={styles.img} src={img} alt={`${make} ${model}`} />
+				<div className={styles.titleCard}>
 					<div>
 						<span>{make} </span>
-						<span>{model} </span>
-						<span>{year}</span>
+						<span className={styles.model}>{model}</span>
+						<span>, {year}</span>
 					</div>
-					<div>{rentalPrice}</div>
+					<div className={styles.price}>{rentalPrice}</div>
 				</div>
-				<ul className={styles.item}>
-					<li>{address.split(",")[1]}</li>
-					<li>{address.split(",")[2]}</li>
-					<li>{rentalCompany}</li>
-					<li>Premium</li>
-					<li>{type}</li>
-					<li>{model}</li>
+				<ul className={styles.listInfo}>
+					<li>
+						{address.split(",")[1]}
+						<Delimiter />
+					</li>
+					<li>
+						{address.split(",")[2]}
+						<Delimiter />
+					</li>
+					<li>
+						{rentalCompany}
+						<Delimiter />
+					</li>
+					<li>
+						Premium
+						<Delimiter />
+					</li>
+					<li>
+						{type}
+						<Delimiter />
+					</li>
+					<li>
+						{model}
+						<Delimiter />
+					</li>
 					<li>{id}</li>
 					<li></li>
 				</ul>
